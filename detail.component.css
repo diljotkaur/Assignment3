@@ -1,0 +1,80 @@
+/*p {
+    color: #ffffff;
+}
+nav {
+    display: block;
+    background: rgb(194, 121, 236);
+  }
+
+  nav button {
+      margin-right: 50px;
+  }*/
+  span {
+      color: white;
+  }
+
+  .gridArea{
+    display: grid;
+    grid-template-columns:  2fr 3fr; 
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "nav  nav"
+    "img  detail";
+    grid-gap: 2px;
+    place-items: center;
+    }
+
+  nav {
+  background-color: #333;
+  overflow: hidden;
+  grid-area: nav;
+  }
+
+  /*.navArea{ background-color: rgb(255, 196, 0); border: thick solid purple; padding: 10px; margin: 10px;t}*/
+  .img{
+      grid-area: img;
+      background-color: rgb(255, 230, 0); 
+      border: thick solid purple; 
+      padding: 10px; 
+      margin: 10px; 
+    }
+
+    .detail{
+        grid-area: detail; 
+        background-color: rgb(255, 196, 0); 
+        border: thick solid purple; 
+        padding: 10px; 
+        margin: 10px;
+    }
+
+
+  
+button {
+    border: thin solid black;
+    background: rgba(58, 226, 100, 0.5);
+    text-align: center;
+    padding: 10px;
+    margin: 10px 10px 10px 10px;
+    list-style-type: none;
+    border-radius: 5px;
+    width: 100px;
+  }
+  
+  button div {
+    background: bisque;
+  }
+
+  table{
+      width: 100%;
+  }
+
+  td {
+      width: 50%;
+      text-align: center;
+  }
+  table, td{
+      border: thin solid black;
+      border-collapse: collapse;
+  }
+
+  

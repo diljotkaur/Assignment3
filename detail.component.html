@@ -1,0 +1,40 @@
+
+<ul id="myList">  
+  <section class="gridArea">
+  <nav class="nav">
+      <span>PLAYLIST</span>
+  <!--<p><strong>Click any button</strong>-->
+  <button *ngFor="let cls of mySongs; let i=index"
+      id='s{{i}}'
+      (click)='onClickMe(i)' >
+    {{cls.songName}}
+  </button>
+  </nav>
+  <br>
+  <div *ngFor="let cls of mySongs; let i=index" id='g{{i}}'>
+      <section class="img">
+        <img src="{{cls.picture}}">
+      </section>
+      <br>
+  </div>
+ 
+      <section class="detail">
+    <!--<div id='d{{i}}'>-->
+        <table *ngFor="let cls of mySongs; let i=index" id='d{{i}}'>
+            <tr><td><strong> Name: </strong></td><td>{{cls.songName}}</td></tr>
+            <tr><td><strong>Artist: </strong></td><td>{{cls.artist}}</td></tr>
+            <tr><td><strong>Genre: </strong></td><td>{{cls.genre}}</td></tr>
+            <tr><td><strong>Year Released: </strong></td><td>{{cls.yearReleased}}</td></tr>
+      <!--<strong>Song Name: </strong> {{cls.songName}}/
+      <strong>Artist: </strong>{{cls.artist}}<br>
+      <strong>Genre: </strong>{{cls.genre}}/
+      <strong>Year Released: </strong>{{cls.yearReleased}}-->
+  
+    </table>
+    <br>
+
+    </section>
+  </section>
+  <!--</p>-->
+</ul>
+
